@@ -8,4 +8,32 @@ function changeUserAgent (request) {
   return { requestHeaders: request.requestHeaders }
 }
 
-chrome.webRequest.onBeforeSendHeaders.addListener(changeUserAgent, {urls: ["*://*.youtube.com/tv*"]}, ["blocking", "requestHeaders"]);
+//chrome.webRequest.onBeforeSendHeaders.addListener(changeUserAgent, {urls: ["*://*.youtube.com/tv*"]}, ["blocking", "requestHeaders"]);
+
+const rules = {
+  removeRuleIds: [1],
+  addRules: [
+    {
+      id: 1,
+      priority: 1,
+      action: {
+        type: 'modifyHeaders',
+        requestHeaders: [
+          {
+            header: 'user-agent',
+            operation: 'set',
+            value: userAgent,
+          },
+        ],
+      },
+      condition: {
+        urlFilter: '*',
+        resourceTypes: ['main_frame']
+      },
+    },
+  ],
+}
+
+chrome.runtime.onInstalled.addListener(function(details) {
+  chrome.declarativeNetRequest.updateDynamicRules(rules);
+});
