@@ -21,7 +21,8 @@
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "{01912552-4c6b-78cd-89b7-24736bd98539}"
+            "id": "{01912552-4c6b-78cd-89b7-24736bd98539}",
+            "update_url": "https://raw.githubusercontent.com/angeloanan/youtube-tv-browser/master/update-manifest.json"
         }
     }
 }
