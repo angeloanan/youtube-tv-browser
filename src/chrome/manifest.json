@@ -18,5 +18,10 @@
     "host_permissions": ["*://*.youtube.com/tv*"],
     "action": {
         "default_title": "YouTube TV for Browser"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{01912552-4c6b-78cd-89b7-24736bd98539}"
+        }
     }
 }
