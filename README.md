@@ -6,8 +6,24 @@
 
 [Download the Extension here](https://github.com/angeloanan/youtube-tv-browser/releases)
 
-**Chrome**: [Installation Guide](https://www.mattcutts.com/blog/how-to-install-a-chrome-extension-from-github/)\
-**Firefox**: [Installation Guide](https://extensionworkshop.com/documentation/publish/distribute-sideloading/#install-addon-from-file)
+<details>
+  <summary><b>Chrome installation guide</b> (Click to expand)</summary>
+
+  0. Download the extension from the [Releases page](https://github.com/angeloanan/youtube-tv-browser/releases) or clone the repository
+  1. Navigate to [chrome://extensions](chrome://extensions)
+  2. Toggle the **Developer mode** toggle to the ON position
+  3. Click on the **Load unpacked** button
+  4. Navigate to the downloaded folder and select it
+</details>
+<details>
+  <summary><b>Firefox installation guide</b> (Click to expand)</summary>
+
+  Due to complications with Firefox extensions, [at the moment (until Firefox approves my extension)](https://github.com/angeloanan/youtube-tv-browser/issues/6) you can only install the extension on either Firefox Developer Edition, Firefox Nightly, or Firefox ESR.
+
+  1. Clone or [Download](https://github.com/angeloanan/youtube-tv-browser/archive/refs/heads/master.zip) the repository & extract it
+  2. Navigate to [about:addons](about:addons)
+  3. Drag the `src` folder inside the repository to the **Add-ons** window
+</details>
 
 ## Usage
 
