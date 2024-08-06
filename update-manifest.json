@@ -1,0 +1,12 @@
+{
+    "addons": {
+        "{01912552-4c6b-78cd-89b7-24736bd98539}": {
+            "updates": [
+                {
+                    "version": "0.1.0",
+                    "update_link": "https://github.com/angeloanan/youtube-tv-browser/releases/download/v1.0/Release.v1.0.-.Chrome.7z"
+                }
+            ]
+        }
+    }
+}
