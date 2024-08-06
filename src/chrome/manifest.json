@@ -1,22 +1,22 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 3,
 
-  "name": "YouTube TV for Browser",
-  "description": "Enables YouTube TV for traditional browser",
-  "version": "0.1",
+    "name": "YouTube TV for Browser",
+    "description": "Enables YouTube TV for traditional browser",
+    "version": "0.1",
 
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "*://*.youtube.com/tv*"
-  ],
-
-  "background": {
-    "scripts": [
-      "background.js"
-    ]
-  },
-  "browser_action": {
-    "default_title": "YouTube TV for Browser"
-  }
+    "permissions": ["declarativeNetRequest"],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "youtube-tv",
+                "enabled": true,
+                "path": "user-agent.json"
+            }
+        ]
+    },
+    "host_permissions": ["*://*.youtube.com/tv*"],
+    "action": {
+        "default_title": "YouTube TV for Browser"
+    }
 }

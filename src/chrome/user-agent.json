@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "header": "user-agent",
+                    "operation": "set",
+                    "value": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 7.0) AppleWebKit/537.36 (KHTML, like Gecko) 94.0.4606.31/7.0 TV Safari/537.36"
+                }
+            ]
+        },
+        "condition": {
+            "urlFilter": "*://*.youtube.com/tv*",
+            "resourceTypes": ["main_frame"]
+        }
+    }
+]
