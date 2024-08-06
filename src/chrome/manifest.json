@@ -3,7 +3,7 @@
 
     "name": "YouTube TV for Browser",
     "description": "Enables YouTube TV for traditional browser",
-    "version": "0.1",
+    "version": "0.1.0",
 
     "permissions": ["declarativeNetRequest"],
     "declarative_net_request": {
