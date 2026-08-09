@@ -1,3 +1,5 @@
+
+
 # youtube-tv-chrome
 
 > ⏯ | A Lightweight Browser extension that enables the YouTube for TV page
@@ -38,5 +40,4 @@ No, seriously, I've designed this extension to be an "*install-and-forget*" exte
 
 ## How does this work
 
-This extension modifies the User Agent of the request to look like its coming from an actual TV (In this case, a [2023 Samsung TV running Tizen 7.0](https://developer.samsung.com/smarttv/develop/guides/fundamentals/retrieving-platform-information.html)). It modifies the HTTP request headers
-
+This extension modifies the User Agent of the request to look like its coming from an actual TV (In this case, a [2023 Samsung TV running Tizen 7.0](https://developer.samsung.com/smarttv/develop/guides/fundamentals/retrieving-platform-information.html)). It modifies the HTTP request headers using the `declarativeNetRequest` API.
